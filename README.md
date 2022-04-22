@@ -12,28 +12,32 @@ El objetivo del presente trabajo práctico es que el estudiante sea capaz diseñ
 
 ## Desarrollo
 ### Problema a desarrollar
-Se pide dquer se diseñe, valide e implemente un programa que realice un algoritmo de [reconocimiento de patrones](https://en.wikipedia.org/wiki/Pattern_recognition) en imágenes, utilizando el lenguaje C y la librería OpenMP.
+Se pide que se diseñe, valide e implemente un programa que realice un algoritmo de [reconocimiento de patrones](https://en.wikipedia.org/wiki/Pattern_recognition) en imágenes, utilizando el lenguaje C y la librería OpenMP.
 
 Dentro de la carpeta img, se encuentrean dos archivos de imágenes, que llamaremos _I_ a la imagen principal y _T_ al patrón que debemos encontrar. 
 
-La ténica consiste en definir una ventana (_window_) de iguales dimensiones que _T_ (w<sub>T</sub> x h<sub>T</sub>), que se desplaza por toda la imagen.
-Si el centro de la ventana  W<sub>i</sub> es el par (K<sub>i</sub>, I<sub>i</sub>), entonces:
+Se debe implem entar un algoritmo simple que consite en definir una ventana (_window_) de iguales dimensiones que _T_ (w<sub>T</sub> x h<sub>T</sub>), que se desplaza por toda la imagen.
 
-IMAGEN
+Si el centro de la ventana  W<sub>i</sub> es el par (K<sub>i</sub>, I<sub>i</sub>), entonces podemos definir:
 
-Para cada ventana W<sub>i</sub>, se computa la distancia euclideana entre T y W<sub>i</sub>
+![sistema_de_coordenadas](.docimg/coords.png)
 
-IMAGEN 2
 
-Luego, se debe crear un mapa de siotancias que para cada punto la distancia entre  W<sub>i</sub> y T
+Para cada ventana W<sub>i</sub> se computa la distancia euclideana entre T y W<sub>i</sub> utilizando:
 
-IMAGEN 3
+![dist](.docimg/dist.png)
+
+Luego, se debe crear un mapa de distancias, donde cada punto es la distancia entre  W<sub>i</sub> y T.
+
+![mapa](.docimg/dist_map.png)
 
 Por último, se debe seleccionar la posición del mínimo en ese mapa y reportar las coordenadas donde se encuentra.
 
+![sistema_de_coordenadas](.docimg/coords.png)
 
 
 ### Restricciones
+Las imágenes deben tratarse cono matrices em R<sub>2</sub> monocromática y es opcional de ustedes convertirlas en un formato amigable para la tarea.
 El diseño debe contemplar toda situación no descripta en el presente documento y se debe hacer un correcto manejo de errores. 
 
 ### Criterios de Corrección
