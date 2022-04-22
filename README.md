@@ -38,7 +38,8 @@ Por último, se debe seleccionar la posición del mínimo en ese mapa y reportar
 
 ### Restricciones
 Las imágenes deben tratarse cono matrices em R<sub>2</sub> monocromática y es opcional de ustedes convertirlas en un formato amigable para la tarea.
-El diseño debe contemplar toda situación no descripta en el presente documento y se debe hacer un correcto manejo de errores. 
+El diseño debe contemplar toda situación no descripta en el presente documento y se debe hacer un correcto manejo de errores.
+El diseño debe ser dinámico, y debe adaptarse a distintas imagenes de distintos tamañaos.
 
 ### Criterios de Corrección
 - Se debe compilar el código con los flags de compilación: 
