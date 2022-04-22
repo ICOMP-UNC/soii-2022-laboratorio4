@@ -33,7 +33,7 @@ Luego, se debe crear un mapa de distancias, donde cada punto es la distancia ent
 
 Por último, se debe seleccionar la posición del mínimo en ese mapa y reportar las coordenadas donde se encuentra.
 
-![sistema_de_coordenadas](.docimg/coords.png)
+![ejemplo](.docimg/ejemplo.png)
 
 
 ### Restricciones
@@ -57,3 +57,7 @@ La entrega se hace a travéz del repositorio de GitHub y se deberá demostrar la
 También se deberá investigar acerca de qué utilidades de profiling gratuitas existen y que brinda cada una (un capítulo del informe), optando por una para realizar las mediciones de tiempo de ejecución de la aplicación diseñada.
 
 El informe (markdown) debe contener gráficos y análisis de comparación entre la ejecución procedural y la distribuida, mostrando la escalabilidad y el speedup del mismo. El informe además debe contener el diseño de la solución y la comparativa de profilers.
+
+## Links
+- [Introduction to parallel programming](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial)
+- [OpenMP Tutorial](https://hpc-tutorials.llnl.gov/openmp/)
